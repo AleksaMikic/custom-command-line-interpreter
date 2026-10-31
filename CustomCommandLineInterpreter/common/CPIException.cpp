@@ -7,7 +7,7 @@ CPIException::CPIException(const std::string& m, std::vector<unsigned int>& p) :
 	
 }
 
-const char* CPIException::what() const {
+const char* CPIException::what() const noexcept {
 	return message.c_str();
 }
 

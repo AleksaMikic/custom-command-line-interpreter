@@ -1,5 +1,5 @@
 #include "RmProcessor.h"
-#include "visitorException.h"
+#include "VisitorException.h"
 #include <fstream>
 #include <memory>
 #include <cstdio>

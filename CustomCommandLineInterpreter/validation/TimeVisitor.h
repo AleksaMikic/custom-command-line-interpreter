@@ -3,7 +3,7 @@
 
 #include "CommandVisitor.h"
 #include "Token.h"
-#include "Time.h"
+#include "TimeCommand.h"
 
 // Input: a time command to check
 // Output: true if valid, and the collected error messages

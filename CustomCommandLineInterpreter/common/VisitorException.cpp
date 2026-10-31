@@ -11,6 +11,6 @@ VisitorException::VisitorException(const std::string& m, std::vector<unsigned in
 VisitorException::~VisitorException() {
 
 }
-const char* VisitorException::what() const{
+const char* VisitorException::what() const noexcept {
 	return message.c_str();
 }

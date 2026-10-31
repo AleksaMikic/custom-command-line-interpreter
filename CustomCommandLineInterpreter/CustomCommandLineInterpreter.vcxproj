@@ -176,7 +176,7 @@
     <ClCompile Include="app\Shell.cpp" />
     <ClCompile Include="execution\StreamController.cpp" />
     <ClCompile Include="lexer\TextHandler.cpp" />
-    <ClCompile Include="commands\Time.cpp" />
+    <ClCompile Include="commands\TimeCommand.cpp" />
     <ClCompile Include="validation\TimeProceessor.cpp" />
     <ClCompile Include="validation\TimeVisitor.cpp" />
     <ClCompile Include="lexer\Token.cpp" />
@@ -243,7 +243,7 @@
     <ClInclude Include="app\Shell.h" />
     <ClInclude Include="execution\StreamController.h" />
     <ClInclude Include="lexer\TextHandler.h" />
-    <ClInclude Include="commands\Time.h" />
+    <ClInclude Include="commands\TimeCommand.h" />
     <ClInclude Include="validation\TimeProcessor.h" />
     <ClInclude Include="validation\TimeVisitor.h" />
     <ClInclude Include="lexer\Token.h" />

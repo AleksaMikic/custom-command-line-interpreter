@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-#include "Time.h"
+#include "TimeCommand.h"
 #include "TimeProcessor.h"
 #include "VisitorException.h"
 #include <ctime>

@@ -12,7 +12,7 @@ class CPIException : public std::exception {
 public:
 	CPIException(const std::string& m);
 	CPIException(const std::string& m, std::vector<unsigned int>& p);
-	virtual const char* what() const override ;
+	virtual const char* what() const noexcept override ;
 	virtual ~CPIException();
 
 protected:

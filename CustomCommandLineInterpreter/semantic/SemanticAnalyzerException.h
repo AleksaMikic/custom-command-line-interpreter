@@ -12,7 +12,7 @@ public:
 	SemanticAnalyzerException(const std::string& m);
 	SemanticAnalyzerException(const std::string& m, std::vector<CommandBlock> i,std::vector<unsigned int>& p, std::vector<std::string> ms);
 
-	const char* what() const override;
+	const char* what() const noexcept override;
 
 	const std::string& getWholeMessage() const { return wholeMessage; }
 	const std::vector<std::string>& getMessages() const { return messages; }

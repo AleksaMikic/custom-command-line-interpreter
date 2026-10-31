@@ -4,7 +4,7 @@
 #include <memory>
 #include "Echo.h"
 #include "Prompt.h"
-#include "Time.h"
+#include "TimeCommand.h"
 #include "Date.h"
 #include "Touch.h"
 #include "Truncate.h"

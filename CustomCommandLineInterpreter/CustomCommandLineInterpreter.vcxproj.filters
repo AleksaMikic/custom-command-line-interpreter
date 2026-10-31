@@ -162,7 +162,7 @@
     <ClCompile Include="lexer\TextHandler.cpp">
       <Filter>lexer</Filter>
     </ClCompile>
-    <ClCompile Include="commands\Time.cpp">
+    <ClCompile Include="commands\TimeCommand.cpp">
       <Filter>commands</Filter>
     </ClCompile>
     <ClCompile Include="validation\TimeProceessor.cpp">
@@ -359,7 +359,7 @@
     <ClInclude Include="lexer\TextHandler.h">
       <Filter>lexer</Filter>
     </ClInclude>
-    <ClInclude Include="commands\Time.h">
+    <ClInclude Include="commands\TimeCommand.h">
       <Filter>commands</Filter>
     </ClInclude>
     <ClInclude Include="validation\TimeProcessor.h">

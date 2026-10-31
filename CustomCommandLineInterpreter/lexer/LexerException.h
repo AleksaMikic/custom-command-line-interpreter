@@ -11,7 +11,7 @@ public:
 	LexerException(const std::string& m);
 	LexerException(const std::string& m, std::vector<unsigned int>& p, std::string& i);
 	
-	const char* what() const override;
+	const char* what() const noexcept override;
 
 	const std::string& getInput() const { return input; };
 	const std::string& getWholeMessage() const { return wholeMessage; }

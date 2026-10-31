@@ -28,7 +28,7 @@ ParserException::ParserException(const std::string& m, std::vector<unsigned int>
 	}
 
 }
-const char* ParserException::what() const {
+const char* ParserException::what() const noexcept {
 	return wholeMessage.c_str();
 }
 

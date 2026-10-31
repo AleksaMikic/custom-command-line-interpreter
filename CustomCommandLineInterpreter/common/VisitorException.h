@@ -9,7 +9,7 @@ public:
 	VisitorException(const std::string& m);
 	VisitorException(const std::string& m, std::vector<unsigned int>& p);
 	
-	const char* what() const override;
+	const char* what() const noexcept override;
 	
 	~VisitorException();
 };

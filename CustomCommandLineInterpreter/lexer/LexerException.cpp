@@ -21,7 +21,7 @@ LexerException::LexerException(const std::string& m, std::vector<unsigned int>& 
 	}
 }
 
-const char* LexerException::what() const {
+const char* LexerException::what() const noexcept {
 	return wholeMessage.c_str();
 }
 

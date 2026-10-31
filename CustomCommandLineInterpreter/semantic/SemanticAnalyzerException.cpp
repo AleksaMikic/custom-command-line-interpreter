@@ -20,7 +20,7 @@ SemanticAnalyzerException::SemanticAnalyzerException(const std::string& m, std::
 	}
 }
 
-const  char* SemanticAnalyzerException::what() const {
+const  char* SemanticAnalyzerException::what() const noexcept {
 	return wholeMessage.c_str();
 }
 

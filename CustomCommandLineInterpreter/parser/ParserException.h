@@ -12,7 +12,7 @@ public:
 	ParserException(const std::string& m);
 	ParserException(const std::string& m, std::vector<unsigned int>& p, std::vector<CommandBlock>& i,std::vector<std::string> ms);
 	
-	const char* what() const override;
+	const char* what() const noexcept override;
 
 	const std::string& getWholeMessage() const{ return wholeMessage; }
 	const std::vector<CommandBlock>& getInput() const { return input; }
