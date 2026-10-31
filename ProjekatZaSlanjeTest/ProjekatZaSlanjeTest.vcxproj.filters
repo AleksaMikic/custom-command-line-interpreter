@@ -1,408 +1,420 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="app">
+      <UniqueIdentifier>{A1C3E2B0-1F4D-4C6A-9E2B-0D7F5A3C8B01}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="lexer">
+      <UniqueIdentifier>{A1C3E2B0-1F4D-4C6A-9E2B-0D7F5A3C8B02}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="parser">
+      <UniqueIdentifier>{A1C3E2B0-1F4D-4C6A-9E2B-0D7F5A3C8B03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="semantic">
+      <UniqueIdentifier>{A1C3E2B0-1F4D-4C6A-9E2B-0D7F5A3C8B04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="execution">
+      <UniqueIdentifier>{A1C3E2B0-1F4D-4C6A-9E2B-0D7F5A3C8B05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="commands">
+      <UniqueIdentifier>{A1C3E2B0-1F4D-4C6A-9E2B-0D7F5A3C8B06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="validation">
+      <UniqueIdentifier>{A1C3E2B0-1F4D-4C6A-9E2B-0D7F5A3C8B07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{A1C3E2B0-1F4D-4C6A-9E2B-0D7F5A3C8B08}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="app\main.cpp">
+      <Filter>app</Filter>
     </ClCompile>
-    <ClCompile Include="Argument.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\Argument.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="Batch.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\Batch.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="BatchProcessor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\BatchProcessor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="BatchVisitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\BatchVisitor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="Command.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\Command.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="CommandFactory.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="semantic\CommandFactory.cpp">
+      <Filter>semantic</Filter>
     </ClCompile>
-    <ClCompile Include="CommandProcessorFactory.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="semantic\CommandProcessorFactory.cpp">
+      <Filter>semantic</Filter>
     </ClCompile>
-    <ClCompile Include="CommandVisitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\CommandVisitor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="CPIException.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="common\CPIException.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="Date.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\Date.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="DateProcessor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\DateProcessor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="DateVisitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\DateVisitor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="Echo.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\Echo.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="EchoProcessor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\EchoProcessor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="EchoVisitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\EchoVisitor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="Executor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="execution\Executor.cpp">
+      <Filter>execution</Filter>
     </ClCompile>
-    <ClCompile Include="FileName.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\FileName.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="Head.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\Head.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="HeadProcessor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\HeadProcessor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="HeadVisitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\HeadVisitor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="Lexer.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="lexer\Lexer.cpp">
+      <Filter>lexer</Filter>
     </ClCompile>
-    <ClCompile Include="LexerException.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="lexer\LexerException.cpp">
+      <Filter>lexer</Filter>
     </ClCompile>
-    <ClCompile Include="LexerProcessor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="lexer\LexerProcessor.cpp">
+      <Filter>lexer</Filter>
     </ClCompile>
-    <ClCompile Include="LexerVisitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="lexer\LexerVisitor.cpp">
+      <Filter>lexer</Filter>
     </ClCompile>
-    <ClCompile Include="Optional.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\Optional.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="Parser.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="parser\Parser.cpp">
+      <Filter>parser</Filter>
     </ClCompile>
-    <ClCompile Include="ParserException.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="parser\ParserException.cpp">
+      <Filter>parser</Filter>
     </ClCompile>
-    <ClCompile Include="ParserProcessor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="parser\ParserProcessor.cpp">
+      <Filter>parser</Filter>
     </ClCompile>
-    <ClCompile Include="ParserVisitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="parser\ParserVisitor.cpp">
+      <Filter>parser</Filter>
     </ClCompile>
-    <ClCompile Include="Prompt.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\Prompt.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="PromptProcessor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\PromptProcessor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="PromptVisitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\PromptVisitor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="QuotedString.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\QuotedString.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="Redirect.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\Redirect.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="Rm.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\Rm.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="RmProcessor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\RmProcessor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="RmVisitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\RmVisitor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="SemanitcAnalyzer.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="semantic\SemanitcAnalyzer.cpp">
+      <Filter>semantic</Filter>
     </ClCompile>
-    <ClCompile Include="SemanitcAnalyzerProcessor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="semantic\SemanitcAnalyzerProcessor.cpp">
+      <Filter>semantic</Filter>
     </ClCompile>
-    <ClCompile Include="SemanticAnalyzerException.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="semantic\SemanticAnalyzerException.cpp">
+      <Filter>semantic</Filter>
     </ClCompile>
-    <ClCompile Include="SemanticAnalyzerVisitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="semantic\SemanticAnalyzerVisitor.cpp">
+      <Filter>semantic</Filter>
     </ClCompile>
-    <ClCompile Include="Shell.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="app\Shell.cpp">
+      <Filter>app</Filter>
     </ClCompile>
-    <ClCompile Include="StreamController.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="execution\StreamController.cpp">
+      <Filter>execution</Filter>
     </ClCompile>
-    <ClCompile Include="TextHandler.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="lexer\TextHandler.cpp">
+      <Filter>lexer</Filter>
     </ClCompile>
-    <ClCompile Include="Time.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\Time.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="TimeProceessor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\TimeProceessor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="TimeVisitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\TimeVisitor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="Token.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="lexer\Token.cpp">
+      <Filter>lexer</Filter>
     </ClCompile>
-    <ClCompile Include="Touch.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\Touch.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="TouchProcessor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\TouchProcessor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="TouchVisitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\TouchVisitor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="Tr.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\Tr.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="TrProcessor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\TrProcessor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="Truncate.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\Truncate.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="TruncateProcessor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\TruncateProcessor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="TruncateVisitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\TruncateVisitor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="TrVisitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\TrVisitor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="VisitableElement.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="common\VisitableElement.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="Visitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="common\Visitor.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="VisitorException.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="common\VisitorException.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="Wc.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="commands\Wc.cpp">
+      <Filter>commands</Filter>
     </ClCompile>
-    <ClCompile Include="WcProcessor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\WcProcessor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
-    <ClCompile Include="WcVisitor.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="validation\WcVisitor.cpp">
+      <Filter>validation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Argument.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Argument.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="Base.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Base.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="Batch.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Batch.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="BatchProcessor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\BatchProcessor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="BatchVisitor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\BatchVisitor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="Command.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Command.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="CommandFactory.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="semantic\CommandFactory.h">
+      <Filter>semantic</Filter>
     </ClInclude>
-    <ClInclude Include="CommandProcessorFactory.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="semantic\CommandProcessorFactory.h">
+      <Filter>semantic</Filter>
     </ClInclude>
-    <ClInclude Include="CommandVisitor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\CommandVisitor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="CPIException.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="common\CPIException.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="Date.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Date.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="DateProcessor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\DateProcessor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="DateVisitor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\DateVisitor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="Echo.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Echo.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="EchoProcessor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\EchoProcessor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="EchoVisitor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\EchoVisitor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="Executor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="execution\Executor.h">
+      <Filter>execution</Filter>
     </ClInclude>
-    <ClInclude Include="FileName.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\FileName.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="Head.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Head.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="HeadProcessor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\HeadProcessor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="HeadVisitor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\HeadVisitor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="Lexer.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="lexer\Lexer.h">
+      <Filter>lexer</Filter>
     </ClInclude>
-    <ClInclude Include="LexerException.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="lexer\LexerException.h">
+      <Filter>lexer</Filter>
     </ClInclude>
-    <ClInclude Include="LexerProcessor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="lexer\LexerProcessor.h">
+      <Filter>lexer</Filter>
     </ClInclude>
-    <ClInclude Include="LexerVisitor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="lexer\LexerVisitor.h">
+      <Filter>lexer</Filter>
     </ClInclude>
-    <ClInclude Include="Option.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Option.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="Optional.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Optional.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="Parser.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="parser\Parser.h">
+      <Filter>parser</Filter>
     </ClInclude>
-    <ClInclude Include="ParserException.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="parser\ParserException.h">
+      <Filter>parser</Filter>
     </ClInclude>
-    <ClInclude Include="ParserProcessor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="parser\ParserProcessor.h">
+      <Filter>parser</Filter>
     </ClInclude>
-    <ClInclude Include="ParserVisitor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="parser\ParserVisitor.h">
+      <Filter>parser</Filter>
     </ClInclude>
-    <ClInclude Include="Prompt.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Prompt.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="PromptProcessor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\PromptProcessor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="PromptVisitor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\PromptVisitor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="QuotedString.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\QuotedString.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="Redirect.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Redirect.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="Rm.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Rm.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="RmProcessor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\RmProcessor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="RmVisitor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\RmVisitor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="SemanticAnalyzer.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="semantic\SemanticAnalyzer.h">
+      <Filter>semantic</Filter>
     </ClInclude>
-    <ClInclude Include="SemanticAnalyzerException.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="semantic\SemanticAnalyzerException.h">
+      <Filter>semantic</Filter>
     </ClInclude>
-    <ClInclude Include="SemanticAnalyzerProcessor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="semantic\SemanticAnalyzerProcessor.h">
+      <Filter>semantic</Filter>
     </ClInclude>
-    <ClInclude Include="SemanticAnalyzerVisitor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="semantic\SemanticAnalyzerVisitor.h">
+      <Filter>semantic</Filter>
     </ClInclude>
-    <ClInclude Include="Shell.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="app\Shell.h">
+      <Filter>app</Filter>
     </ClInclude>
-    <ClInclude Include="StreamController.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="execution\StreamController.h">
+      <Filter>execution</Filter>
     </ClInclude>
-    <ClInclude Include="TextHandler.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="lexer\TextHandler.h">
+      <Filter>lexer</Filter>
     </ClInclude>
-    <ClInclude Include="Time.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Time.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="TimeProcessor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\TimeProcessor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="TimeVisitor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\TimeVisitor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="Token.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="lexer\Token.h">
+      <Filter>lexer</Filter>
     </ClInclude>
-    <ClInclude Include="Touch.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Touch.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="TouchProcessor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\TouchProcessor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="TouchVisitor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\TouchVisitor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="Tr.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Tr.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="TrProcessor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\TrProcessor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="Truncate.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Truncate.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="TruncateProcessor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\TruncateProcessor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="TruncateVisitor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\TruncateVisitor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="TrVisitor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\TrVisitor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="VisitableElement.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="common\VisitableElement.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="Visitor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="common\Visitor.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="VisitorException.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="common\VisitorException.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="Wc.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="commands\Wc.h">
+      <Filter>commands</Filter>
     </ClInclude>
-    <ClInclude Include="WcProcessor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\WcProcessor.h">
+      <Filter>validation</Filter>
     </ClInclude>
-    <ClInclude Include="WcVisitor.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="validation\WcVisitor.h">
+      <Filter>validation</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
