@@ -23,7 +23,7 @@ The project was built to practise compiler-style input processing (lexer → par
 ### Steps
 
 1. Clone the repository or download it as a ZIP and extract it.
-2. Open `ProjekatZaSlanjeTest.sln` in Visual Studio 2022.
+2. Open `CustomCommandLineInterpreter.sln` in Visual Studio 2022.
 3. In the toolbar, choose a configuration (`Debug` or `Release`) and platform (`x64`).
 4. Build with **Build → Build Solution** (`Ctrl+Shift+B`).
 5. Run with **Debug → Start Without Debugging** (`Ctrl+F5`).
@@ -292,7 +292,7 @@ Each validation step is implemented as a separate visitor class, so the rules fo
 ## Project structure
 
 ```
-ProjekatZaSlanjeTest/
+CustomCommandLineInterpreter/
 ├── app/          entry point and the Shell loop
 ├── lexer/        tokenizing the input line
 ├── parser/       splitting into command blocks and syntax checks
