@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{71756ee9-1ee2-4ea4-8747-17bae2200fd0}</ProjectGuid>
+    <RootNamespace>ProjekatZaSlanjeTest</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Argument.cpp" />
+    <ClCompile Include="Batch.cpp" />
+    <ClCompile Include="BatchProcessor.cpp" />
+    <ClCompile Include="BatchVisitor.cpp" />
+    <ClCompile Include="Command.cpp" />
+    <ClCompile Include="CommandFactory.cpp" />
+    <ClCompile Include="CommandProcessorFactory.cpp" />
+    <ClCompile Include="CommandVisitor.cpp" />
+    <ClCompile Include="CPIException.cpp" />
+    <ClCompile Include="Date.cpp" />
+    <ClCompile Include="DateProcessor.cpp" />
+    <ClCompile Include="DateVisitor.cpp" />
+    <ClCompile Include="Echo.cpp" />
+    <ClCompile Include="EchoProcessor.cpp" />
+    <ClCompile Include="EchoVisitor.cpp" />
+    <ClCompile Include="Executor.cpp" />
+    <ClCompile Include="FileName.cpp" />
+    <ClCompile Include="Head.cpp" />
+    <ClCompile Include="HeadProcessor.cpp" />
+    <ClCompile Include="HeadVisitor.cpp" />
+    <ClCompile Include="Lexer.cpp" />
+    <ClCompile Include="LexerException.cpp" />
+    <ClCompile Include="LexerProcessor.cpp" />
+    <ClCompile Include="LexerVisitor.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Optional.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="ParserException.cpp" />
+    <ClCompile Include="ParserProcessor.cpp" />
+    <ClCompile Include="ParserVisitor.cpp" />
+    <ClCompile Include="Prompt.cpp" />
+    <ClCompile Include="PromptProcessor.cpp" />
+    <ClCompile Include="PromptVisitor.cpp" />
+    <ClCompile Include="QuotedString.cpp" />
+    <ClCompile Include="Redirect.cpp" />
+    <ClCompile Include="Rm.cpp" />
+    <ClCompile Include="RmProcessor.cpp" />
+    <ClCompile Include="RmVisitor.cpp" />
+    <ClCompile Include="SemanitcAnalyzer.cpp" />
+    <ClCompile Include="SemanitcAnalyzerProcessor.cpp" />
+    <ClCompile Include="SemanticAnalyzerException.cpp" />
+    <ClCompile Include="SemanticAnalyzerVisitor.cpp" />
+    <ClCompile Include="Shell.cpp" />
+    <ClCompile Include="StreamController.cpp" />
+    <ClCompile Include="TextHandler.cpp" />
+    <ClCompile Include="Time.cpp" />
+    <ClCompile Include="TimeProceessor.cpp" />
+    <ClCompile Include="TimeVisitor.cpp" />
+    <ClCompile Include="Token.cpp" />
+    <ClCompile Include="Touch.cpp" />
+    <ClCompile Include="TouchProcessor.cpp" />
+    <ClCompile Include="TouchVisitor.cpp" />
+    <ClCompile Include="Tr.cpp" />
+    <ClCompile Include="TrProcessor.cpp" />
+    <ClCompile Include="Truncate.cpp" />
+    <ClCompile Include="TruncateProcessor.cpp" />
+    <ClCompile Include="TruncateVisitor.cpp" />
+    <ClCompile Include="TrVisitor.cpp" />
+    <ClCompile Include="VisitableElement.cpp" />
+    <ClCompile Include="Visitor.cpp" />
+    <ClCompile Include="VisitorException.cpp" />
+    <ClCompile Include="Wc.cpp" />
+    <ClCompile Include="WcProcessor.cpp" />
+    <ClCompile Include="WcVisitor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Argument.h" />
+    <ClInclude Include="Base.h" />
+    <ClInclude Include="Batch.h" />
+    <ClInclude Include="BatchProcessor.h" />
+    <ClInclude Include="BatchVisitor.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="CommandFactory.h" />
+    <ClInclude Include="CommandProcessorFactory.h" />
+    <ClInclude Include="CommandVisitor.h" />
+    <ClInclude Include="CPIException.h" />
+    <ClInclude Include="Date.h" />
+    <ClInclude Include="DateProcessor.h" />
+    <ClInclude Include="DateVisitor.h" />
+    <ClInclude Include="Echo.h" />
+    <ClInclude Include="EchoProcessor.h" />
+    <ClInclude Include="EchoVisitor.h" />
+    <ClInclude Include="Executor.h" />
+    <ClInclude Include="FileName.h" />
+    <ClInclude Include="Head.h" />
+    <ClInclude Include="HeadProcessor.h" />
+    <ClInclude Include="HeadVisitor.h" />
+    <ClInclude Include="Lexer.h" />
+    <ClInclude Include="LexerException.h" />
+    <ClInclude Include="LexerProcessor.h" />
+    <ClInclude Include="LexerVisitor.h" />
+    <ClInclude Include="Option.h" />
+    <ClInclude Include="Optional.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="ParserException.h" />
+    <ClInclude Include="ParserProcessor.h" />
+    <ClInclude Include="ParserVisitor.h" />
+    <ClInclude Include="Prompt.h" />
+    <ClInclude Include="PromptProcessor.h" />
+    <ClInclude Include="PromptVisitor.h" />
+    <ClInclude Include="QuotedString.h" />
+    <ClInclude Include="Redirect.h" />
+    <ClInclude Include="Rm.h" />
+    <ClInclude Include="RmProcessor.h" />
+    <ClInclude Include="RmVisitor.h" />
+    <ClInclude Include="SemanticAnalyzer.h" />
+    <ClInclude Include="SemanticAnalyzerException.h" />
+    <ClInclude Include="SemanticAnalyzerProcessor.h" />
+    <ClInclude Include="SemanticAnalyzerVisitor.h" />
+    <ClInclude Include="Shell.h" />
+    <ClInclude Include="StreamController.h" />
+    <ClInclude Include="TextHandler.h" />
+    <ClInclude Include="Time.h" />
+    <ClInclude Include="TimeProcessor.h" />
+    <ClInclude Include="TimeVisitor.h" />
+    <ClInclude Include="Token.h" />
+    <ClInclude Include="Touch.h" />
+    <ClInclude Include="TouchProcessor.h" />
+    <ClInclude Include="TouchVisitor.h" />
+    <ClInclude Include="Tr.h" />
+    <ClInclude Include="TrProcessor.h" />
+    <ClInclude Include="Truncate.h" />
+    <ClInclude Include="TruncateProcessor.h" />
+    <ClInclude Include="TruncateVisitor.h" />
+    <ClInclude Include="TrVisitor.h" />
+    <ClInclude Include="VisitableElement.h" />
+    <ClInclude Include="Visitor.h" />
+    <ClInclude Include="VisitorException.h" />
+    <ClInclude Include="Wc.h" />
+    <ClInclude Include="WcProcessor.h" />
+    <ClInclude Include="WcVisitor.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
