@@ -76,6 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)app;$(ProjectDir)lexer;$(ProjectDir)parser;$(ProjectDir)semantic;$(ProjectDir)execution;$(ProjectDir)commands;$(ProjectDir)validation;$(ProjectDir)common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -90,6 +91,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)app;$(ProjectDir)lexer;$(ProjectDir)parser;$(ProjectDir)semantic;$(ProjectDir)execution;$(ProjectDir)commands;$(ProjectDir)validation;$(ProjectDir)common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -104,6 +106,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)app;$(ProjectDir)lexer;$(ProjectDir)parser;$(ProjectDir)semantic;$(ProjectDir)execution;$(ProjectDir)commands;$(ProjectDir)validation;$(ProjectDir)common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -118,6 +121,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)app;$(ProjectDir)lexer;$(ProjectDir)parser;$(ProjectDir)semantic;$(ProjectDir)execution;$(ProjectDir)commands;$(ProjectDir)validation;$(ProjectDir)common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,137 +131,137 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Argument.cpp" />
-    <ClCompile Include="Batch.cpp" />
-    <ClCompile Include="BatchProcessor.cpp" />
-    <ClCompile Include="BatchVisitor.cpp" />
-    <ClCompile Include="Command.cpp" />
-    <ClCompile Include="CommandFactory.cpp" />
-    <ClCompile Include="CommandProcessorFactory.cpp" />
-    <ClCompile Include="CommandVisitor.cpp" />
-    <ClCompile Include="CPIException.cpp" />
-    <ClCompile Include="Date.cpp" />
-    <ClCompile Include="DateProcessor.cpp" />
-    <ClCompile Include="DateVisitor.cpp" />
-    <ClCompile Include="Echo.cpp" />
-    <ClCompile Include="EchoProcessor.cpp" />
-    <ClCompile Include="EchoVisitor.cpp" />
-    <ClCompile Include="Executor.cpp" />
-    <ClCompile Include="FileName.cpp" />
-    <ClCompile Include="Head.cpp" />
-    <ClCompile Include="HeadProcessor.cpp" />
-    <ClCompile Include="HeadVisitor.cpp" />
-    <ClCompile Include="Lexer.cpp" />
-    <ClCompile Include="LexerException.cpp" />
-    <ClCompile Include="LexerProcessor.cpp" />
-    <ClCompile Include="LexerVisitor.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Optional.cpp" />
-    <ClCompile Include="Parser.cpp" />
-    <ClCompile Include="ParserException.cpp" />
-    <ClCompile Include="ParserProcessor.cpp" />
-    <ClCompile Include="ParserVisitor.cpp" />
-    <ClCompile Include="Prompt.cpp" />
-    <ClCompile Include="PromptProcessor.cpp" />
-    <ClCompile Include="PromptVisitor.cpp" />
-    <ClCompile Include="QuotedString.cpp" />
-    <ClCompile Include="Redirect.cpp" />
-    <ClCompile Include="Rm.cpp" />
-    <ClCompile Include="RmProcessor.cpp" />
-    <ClCompile Include="RmVisitor.cpp" />
-    <ClCompile Include="SemanitcAnalyzer.cpp" />
-    <ClCompile Include="SemanitcAnalyzerProcessor.cpp" />
-    <ClCompile Include="SemanticAnalyzerException.cpp" />
-    <ClCompile Include="SemanticAnalyzerVisitor.cpp" />
-    <ClCompile Include="Shell.cpp" />
-    <ClCompile Include="StreamController.cpp" />
-    <ClCompile Include="TextHandler.cpp" />
-    <ClCompile Include="Time.cpp" />
-    <ClCompile Include="TimeProceessor.cpp" />
-    <ClCompile Include="TimeVisitor.cpp" />
-    <ClCompile Include="Token.cpp" />
-    <ClCompile Include="Touch.cpp" />
-    <ClCompile Include="TouchProcessor.cpp" />
-    <ClCompile Include="TouchVisitor.cpp" />
-    <ClCompile Include="Tr.cpp" />
-    <ClCompile Include="TrProcessor.cpp" />
-    <ClCompile Include="Truncate.cpp" />
-    <ClCompile Include="TruncateProcessor.cpp" />
-    <ClCompile Include="TruncateVisitor.cpp" />
-    <ClCompile Include="TrVisitor.cpp" />
-    <ClCompile Include="VisitableElement.cpp" />
-    <ClCompile Include="Visitor.cpp" />
-    <ClCompile Include="VisitorException.cpp" />
-    <ClCompile Include="Wc.cpp" />
-    <ClCompile Include="WcProcessor.cpp" />
-    <ClCompile Include="WcVisitor.cpp" />
+    <ClCompile Include="commands\Argument.cpp" />
+    <ClCompile Include="commands\Batch.cpp" />
+    <ClCompile Include="validation\BatchProcessor.cpp" />
+    <ClCompile Include="validation\BatchVisitor.cpp" />
+    <ClCompile Include="commands\Command.cpp" />
+    <ClCompile Include="semantic\CommandFactory.cpp" />
+    <ClCompile Include="semantic\CommandProcessorFactory.cpp" />
+    <ClCompile Include="validation\CommandVisitor.cpp" />
+    <ClCompile Include="common\CPIException.cpp" />
+    <ClCompile Include="commands\Date.cpp" />
+    <ClCompile Include="validation\DateProcessor.cpp" />
+    <ClCompile Include="validation\DateVisitor.cpp" />
+    <ClCompile Include="commands\Echo.cpp" />
+    <ClCompile Include="validation\EchoProcessor.cpp" />
+    <ClCompile Include="validation\EchoVisitor.cpp" />
+    <ClCompile Include="execution\Executor.cpp" />
+    <ClCompile Include="commands\FileName.cpp" />
+    <ClCompile Include="commands\Head.cpp" />
+    <ClCompile Include="validation\HeadProcessor.cpp" />
+    <ClCompile Include="validation\HeadVisitor.cpp" />
+    <ClCompile Include="lexer\Lexer.cpp" />
+    <ClCompile Include="lexer\LexerException.cpp" />
+    <ClCompile Include="lexer\LexerProcessor.cpp" />
+    <ClCompile Include="lexer\LexerVisitor.cpp" />
+    <ClCompile Include="app\main.cpp" />
+    <ClCompile Include="commands\Optional.cpp" />
+    <ClCompile Include="parser\Parser.cpp" />
+    <ClCompile Include="parser\ParserException.cpp" />
+    <ClCompile Include="parser\ParserProcessor.cpp" />
+    <ClCompile Include="parser\ParserVisitor.cpp" />
+    <ClCompile Include="commands\Prompt.cpp" />
+    <ClCompile Include="validation\PromptProcessor.cpp" />
+    <ClCompile Include="validation\PromptVisitor.cpp" />
+    <ClCompile Include="commands\QuotedString.cpp" />
+    <ClCompile Include="commands\Redirect.cpp" />
+    <ClCompile Include="commands\Rm.cpp" />
+    <ClCompile Include="validation\RmProcessor.cpp" />
+    <ClCompile Include="validation\RmVisitor.cpp" />
+    <ClCompile Include="semantic\SemanitcAnalyzer.cpp" />
+    <ClCompile Include="semantic\SemanitcAnalyzerProcessor.cpp" />
+    <ClCompile Include="semantic\SemanticAnalyzerException.cpp" />
+    <ClCompile Include="semantic\SemanticAnalyzerVisitor.cpp" />
+    <ClCompile Include="app\Shell.cpp" />
+    <ClCompile Include="execution\StreamController.cpp" />
+    <ClCompile Include="lexer\TextHandler.cpp" />
+    <ClCompile Include="commands\Time.cpp" />
+    <ClCompile Include="validation\TimeProceessor.cpp" />
+    <ClCompile Include="validation\TimeVisitor.cpp" />
+    <ClCompile Include="lexer\Token.cpp" />
+    <ClCompile Include="commands\Touch.cpp" />
+    <ClCompile Include="validation\TouchProcessor.cpp" />
+    <ClCompile Include="validation\TouchVisitor.cpp" />
+    <ClCompile Include="commands\Tr.cpp" />
+    <ClCompile Include="validation\TrProcessor.cpp" />
+    <ClCompile Include="commands\Truncate.cpp" />
+    <ClCompile Include="validation\TruncateProcessor.cpp" />
+    <ClCompile Include="validation\TruncateVisitor.cpp" />
+    <ClCompile Include="validation\TrVisitor.cpp" />
+    <ClCompile Include="common\VisitableElement.cpp" />
+    <ClCompile Include="common\Visitor.cpp" />
+    <ClCompile Include="common\VisitorException.cpp" />
+    <ClCompile Include="commands\Wc.cpp" />
+    <ClCompile Include="validation\WcProcessor.cpp" />
+    <ClCompile Include="validation\WcVisitor.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Argument.h" />
-    <ClInclude Include="Base.h" />
-    <ClInclude Include="Batch.h" />
-    <ClInclude Include="BatchProcessor.h" />
-    <ClInclude Include="BatchVisitor.h" />
-    <ClInclude Include="Command.h" />
-    <ClInclude Include="CommandFactory.h" />
-    <ClInclude Include="CommandProcessorFactory.h" />
-    <ClInclude Include="CommandVisitor.h" />
-    <ClInclude Include="CPIException.h" />
-    <ClInclude Include="Date.h" />
-    <ClInclude Include="DateProcessor.h" />
-    <ClInclude Include="DateVisitor.h" />
-    <ClInclude Include="Echo.h" />
-    <ClInclude Include="EchoProcessor.h" />
-    <ClInclude Include="EchoVisitor.h" />
-    <ClInclude Include="Executor.h" />
-    <ClInclude Include="FileName.h" />
-    <ClInclude Include="Head.h" />
-    <ClInclude Include="HeadProcessor.h" />
-    <ClInclude Include="HeadVisitor.h" />
-    <ClInclude Include="Lexer.h" />
-    <ClInclude Include="LexerException.h" />
-    <ClInclude Include="LexerProcessor.h" />
-    <ClInclude Include="LexerVisitor.h" />
-    <ClInclude Include="Option.h" />
-    <ClInclude Include="Optional.h" />
-    <ClInclude Include="Parser.h" />
-    <ClInclude Include="ParserException.h" />
-    <ClInclude Include="ParserProcessor.h" />
-    <ClInclude Include="ParserVisitor.h" />
-    <ClInclude Include="Prompt.h" />
-    <ClInclude Include="PromptProcessor.h" />
-    <ClInclude Include="PromptVisitor.h" />
-    <ClInclude Include="QuotedString.h" />
-    <ClInclude Include="Redirect.h" />
-    <ClInclude Include="Rm.h" />
-    <ClInclude Include="RmProcessor.h" />
-    <ClInclude Include="RmVisitor.h" />
-    <ClInclude Include="SemanticAnalyzer.h" />
-    <ClInclude Include="SemanticAnalyzerException.h" />
-    <ClInclude Include="SemanticAnalyzerProcessor.h" />
-    <ClInclude Include="SemanticAnalyzerVisitor.h" />
-    <ClInclude Include="Shell.h" />
-    <ClInclude Include="StreamController.h" />
-    <ClInclude Include="TextHandler.h" />
-    <ClInclude Include="Time.h" />
-    <ClInclude Include="TimeProcessor.h" />
-    <ClInclude Include="TimeVisitor.h" />
-    <ClInclude Include="Token.h" />
-    <ClInclude Include="Touch.h" />
-    <ClInclude Include="TouchProcessor.h" />
-    <ClInclude Include="TouchVisitor.h" />
-    <ClInclude Include="Tr.h" />
-    <ClInclude Include="TrProcessor.h" />
-    <ClInclude Include="Truncate.h" />
-    <ClInclude Include="TruncateProcessor.h" />
-    <ClInclude Include="TruncateVisitor.h" />
-    <ClInclude Include="TrVisitor.h" />
-    <ClInclude Include="VisitableElement.h" />
-    <ClInclude Include="Visitor.h" />
-    <ClInclude Include="VisitorException.h" />
-    <ClInclude Include="Wc.h" />
-    <ClInclude Include="WcProcessor.h" />
-    <ClInclude Include="WcVisitor.h" />
+    <ClInclude Include="commands\Argument.h" />
+    <ClInclude Include="commands\Base.h" />
+    <ClInclude Include="commands\Batch.h" />
+    <ClInclude Include="validation\BatchProcessor.h" />
+    <ClInclude Include="validation\BatchVisitor.h" />
+    <ClInclude Include="commands\Command.h" />
+    <ClInclude Include="semantic\CommandFactory.h" />
+    <ClInclude Include="semantic\CommandProcessorFactory.h" />
+    <ClInclude Include="validation\CommandVisitor.h" />
+    <ClInclude Include="common\CPIException.h" />
+    <ClInclude Include="commands\Date.h" />
+    <ClInclude Include="validation\DateProcessor.h" />
+    <ClInclude Include="validation\DateVisitor.h" />
+    <ClInclude Include="commands\Echo.h" />
+    <ClInclude Include="validation\EchoProcessor.h" />
+    <ClInclude Include="validation\EchoVisitor.h" />
+    <ClInclude Include="execution\Executor.h" />
+    <ClInclude Include="commands\FileName.h" />
+    <ClInclude Include="commands\Head.h" />
+    <ClInclude Include="validation\HeadProcessor.h" />
+    <ClInclude Include="validation\HeadVisitor.h" />
+    <ClInclude Include="lexer\Lexer.h" />
+    <ClInclude Include="lexer\LexerException.h" />
+    <ClInclude Include="lexer\LexerProcessor.h" />
+    <ClInclude Include="lexer\LexerVisitor.h" />
+    <ClInclude Include="commands\Option.h" />
+    <ClInclude Include="commands\Optional.h" />
+    <ClInclude Include="parser\Parser.h" />
+    <ClInclude Include="parser\ParserException.h" />
+    <ClInclude Include="parser\ParserProcessor.h" />
+    <ClInclude Include="parser\ParserVisitor.h" />
+    <ClInclude Include="commands\Prompt.h" />
+    <ClInclude Include="validation\PromptProcessor.h" />
+    <ClInclude Include="validation\PromptVisitor.h" />
+    <ClInclude Include="commands\QuotedString.h" />
+    <ClInclude Include="commands\Redirect.h" />
+    <ClInclude Include="commands\Rm.h" />
+    <ClInclude Include="validation\RmProcessor.h" />
+    <ClInclude Include="validation\RmVisitor.h" />
+    <ClInclude Include="semantic\SemanticAnalyzer.h" />
+    <ClInclude Include="semantic\SemanticAnalyzerException.h" />
+    <ClInclude Include="semantic\SemanticAnalyzerProcessor.h" />
+    <ClInclude Include="semantic\SemanticAnalyzerVisitor.h" />
+    <ClInclude Include="app\Shell.h" />
+    <ClInclude Include="execution\StreamController.h" />
+    <ClInclude Include="lexer\TextHandler.h" />
+    <ClInclude Include="commands\Time.h" />
+    <ClInclude Include="validation\TimeProcessor.h" />
+    <ClInclude Include="validation\TimeVisitor.h" />
+    <ClInclude Include="lexer\Token.h" />
+    <ClInclude Include="commands\Touch.h" />
+    <ClInclude Include="validation\TouchProcessor.h" />
+    <ClInclude Include="validation\TouchVisitor.h" />
+    <ClInclude Include="commands\Tr.h" />
+    <ClInclude Include="validation\TrProcessor.h" />
+    <ClInclude Include="commands\Truncate.h" />
+    <ClInclude Include="validation\TruncateProcessor.h" />
+    <ClInclude Include="validation\TruncateVisitor.h" />
+    <ClInclude Include="validation\TrVisitor.h" />
+    <ClInclude Include="common\VisitableElement.h" />
+    <ClInclude Include="common\Visitor.h" />
+    <ClInclude Include="common\VisitorException.h" />
+    <ClInclude Include="commands\Wc.h" />
+    <ClInclude Include="validation\WcProcessor.h" />
+    <ClInclude Include="validation\WcVisitor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
